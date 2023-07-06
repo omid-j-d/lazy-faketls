@@ -14,8 +14,8 @@ read -p "Enter the tunneling port number: " tport
 read -p "Enter the service number: " number
 
 if [[ "$choice" == "i" ]]; then
-  read -p "Enter the domain name: " domain
-  execstart="--tunnel --lport:$port --toip:$domain --toport:$tport --sni:data.services.jetbrains.com --password:doodool"
+  read -p "Enter your ip " ip
+  execstart="--tunnel --lport:$port --toip:$ip --toport:$tport --sni:data.services.jetbrains.com --password:doodool"
 else
   execstart="--server --lport:$tport --toip:127.0.0.1 --toport:$port --sni:data.services.jetbrains.com --password:doodool"
 fi
