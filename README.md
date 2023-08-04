@@ -10,7 +10,7 @@ wget https://github.com/omid-j-d/lazy-faketls/releases/download/bash/faketls.sh
 chmod +x faketls.sh
 ```
 
-نصب gost بر روی هر دو سرور خارج و ایران
+اجرای فایل bash
 ```
 bash faketls.sh
 ```
