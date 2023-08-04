@@ -10,6 +10,7 @@ wget https://github.com/omid-j-d/lazy-faketls/releases/download/bash/faketls.sh
 chmod +x faketls.sh
 ```
 
+قدم دوم
 اجرای فایل bash
 ```
 bash faketls.sh
