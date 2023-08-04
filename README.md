@@ -24,10 +24,14 @@ bash faketls.sh
 # طریقه مدیریت سرویس:
 
 برای مشاهده وضعیت سرویس میتوانید از دستور زیر استفاده کنید
-``` systemctl status ftt{service_number} ```
+```
+systemctl status ftt{service_number} 
+```
 
 برای راه اندازی دوباره سرویس میتوانید از دستور زیر استفاده کنید
-``` systemctl restart ftt{service_number} ```
+```
+systemctl restart ftt{service_number}
+```
 
 برای متوقف کردن سرویس میتوانید از دستور زیر استفاده کنید
 ``` systemctl stop ftt{service_number} ```
