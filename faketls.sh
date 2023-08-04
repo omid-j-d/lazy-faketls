@@ -14,7 +14,7 @@ read -p "Enter the tunneling port number: " tport
 read -p "Enter the service number: " number
 
 if [[ "$choice" == "i" ]]; then
-  read -p "Enter your ip " ip
+  read -p "Enter your ip: " ip
   execstart="--tunnel --lport:$port --toip:$ip --toport:$tport --sni:data.services.jetbrains.com --password:doodool --terminate:6"
 else
   execstart="--server --lport:$tport --toip:127.0.0.1 --toport:$port --sni:data.services.jetbrains.com --password:doodool --terminate:6"
@@ -39,6 +39,6 @@ ufw allow $port
 
 systemctl daemon-reload
 systemctl enable ftt$number
-systemctl restart ftt$number
 systemctl start ftt$number
+systemctl restart ftt$number
 systemctl status ftt$number
