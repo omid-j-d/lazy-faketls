@@ -35,6 +35,8 @@ bash faketls.sh
 برای روشن کردن سرویس میتوانید از دستور زیر استفاده کنید
 ``` systemctl start ftt{service_number} ```
 
+مسیر فایل سرویس ایجاد شده
+``` /etc/systemd/system/ftt$number.service```
 
 کافیست در دستور بالا به جای {service_number} عددی که در هنگام ایجاد سرویس وارده کرده اید را جای گذاری کنید 
 
